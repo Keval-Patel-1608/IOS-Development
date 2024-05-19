@@ -249,7 +249,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZaM-b4-GNj"/>
+                                    <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F7n-u8-a2V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-oj-oc3">
@@ -270,7 +270,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zs0-Cy-68C"/>
+                                    <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4h-is-wyX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-XC-0F3">
@@ -441,7 +441,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7RO-dI-Ibl"/>
+                                    <action selector="buttonClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGo-nM-eav"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqI-EA-Ukd">
@@ -464,7 +464,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonInvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tgr-1x-eRB"/>
+                                    <action selector="buttonInvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxg-d8-jsb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3E-Yv-PeS">
@@ -489,7 +489,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4h-TF-7A0">
-                                <rect key="frame" x="142" y="59" width="109.33333333333331" height="26.666666666666671"/>
+                                <rect key="frame" x="142" y="58.999999999999993" width="109.33333333333331" height="26.666666666666664"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -562,7 +562,29 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Result" destination="5Ei-SJ-k27" id="SR4-J5-raO"/>
+                        <outlet property="AppTitle" destination="t4h-TF-7A0" id="ycp-mV-jEA"/>
+                        <outlet property="DigitOne" destination="g2m-wo-N4Z" id="qf8-k1-1m1"/>
+                        <outlet property="DigitTwo" destination="CAI-zX-3tj" id="cRJ-1N-Z2v"/>
+                        <outlet property="Result" destination="5Ei-SJ-k27" id="QtX-4i-7Bu"/>
+                        <outlet property="buttonAdd" destination="EId-hJ-nt5" id="3V6-OY-syd"/>
+                        <outlet property="buttonClear" destination="hee-OX-eJW" id="byM-nO-hRJ"/>
+                        <outlet property="buttonDivide" destination="Wzx-c1-MWo" id="c1U-8K-XBD"/>
+                        <outlet property="buttonDot" destination="zcv-DJ-85h" id="qIQ-sL-HYM"/>
+                        <outlet property="buttonEight" destination="92S-fh-cFV" id="Rd1-WU-1X3"/>
+                        <outlet property="buttonEqual" destination="1mO-Od-haA" id="jgR-rA-7Ue"/>
+                        <outlet property="buttonFive" destination="j2l-d6-k7L" id="Bwp-Fa-SMl"/>
+                        <outlet property="buttonFour" destination="Eas-IB-9xh" id="Lqn-io-MdO"/>
+                        <outlet property="buttonInvert" destination="mqI-EA-Ukd" id="bvU-1x-bh0"/>
+                        <outlet property="buttonMultiply" destination="9xj-26-3BC" id="p6x-Lu-de3"/>
+                        <outlet property="buttonNine" destination="zvH-mJ-FIw" id="lnt-QO-LKy"/>
+                        <outlet property="buttonOne" destination="6J7-wa-MgH" id="Kz6-iz-AaI"/>
+                        <outlet property="buttonSeven" destination="srK-xj-m9e" id="TO7-Wf-4vR"/>
+                        <outlet property="buttonSix" destination="t4R-za-D7n" id="Aw0-ed-WZi"/>
+                        <outlet property="buttonSquare" destination="y3E-Yv-PeS" id="RXZ-SO-FWb"/>
+                        <outlet property="buttonSubstract" destination="3yg-qk-eh7" id="Kfb-62-W8n"/>
+                        <outlet property="buttonThree" destination="d6c-XC-0F3" id="zEZ-fl-ztQ"/>
+                        <outlet property="buttonTwo" destination="7Pd-oj-oc3" id="IzP-7g-zCB"/>
+                        <outlet property="buttonZero" destination="7Ys-q3-b1i" id="3cd-hu-EX3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

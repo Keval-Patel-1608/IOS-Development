@@ -77,25 +77,32 @@ class ViewController: UIViewController {
     }
     @IBAction func DigitTwo(_ sender: UITextField) {
     }
+    
+    @IBOutlet weak var AppTitle: UILabel!
+    @IBOutlet weak var DigitOne: UITextField!
+    @IBOutlet weak var DigitTwo: UITextField!
     @IBOutlet weak var Result: UILabel!
     
+    @IBOutlet weak var buttonClear: UIButton!
+    @IBOutlet weak var buttonInvert: UIButton!
+    @IBOutlet weak var buttonSquare: UIButton!
+    @IBOutlet weak var buttonDivide: UIButton!
+    @IBOutlet weak var buttonMultiply: UIButton!
+    @IBOutlet weak var buttonSubstract: UIButton!
+    @IBOutlet weak var buttonAdd: UIButton!
+    @IBOutlet weak var buttonEqual: UIButton!
+    @IBOutlet weak var buttonDot: UIButton!
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    @IBOutlet weak var buttonZero: UIButton!
+    @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
+    @IBOutlet weak var buttonThree: UIButton!
+    @IBOutlet weak var buttonFour: UIButton!
+    @IBOutlet weak var buttonFive: UIButton!
+    @IBOutlet weak var buttonSix: UIButton!
+    @IBOutlet weak var buttonSeven: UIButton!
+    @IBOutlet weak var buttonEight: UIButton!
+    @IBOutlet weak var buttonNine: UIButton!
     
 }
 
