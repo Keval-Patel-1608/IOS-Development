@@ -22,10 +22,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelMessage: UILabel!
     
     @IBAction func buttonAdd(_ sender: UIButton) {
-        self.txtArea.text = "Full Name : \(self.txtFirstName.text!) \(self.txtLastName.text!)\nCountry : \(self.txtCountry.text!)\nAge : \(self.txtAge.text!)"
+        self.txtArea.isHidden = false
+        self.txtArea.text = "\n\nFull Name : \(self.txtFirstName.text!) \(self.txtLastName.text!)\nCountry : \(self.txtCountry.text!)\nAge : \(self.txtAge.text!)"
     }
     @IBAction func buttonSubmit(_ sender: UIButton) {
-        if self.txtFirstName.text == "" && self.txtLastName.text == "" && self.txtCountry.text == "" && self.txtAge.text == ""{
+        if self.txtFirstName.text == "" || self.txtLastName.text == "" || self.txtCountry.text == "" || self.txtAge.text == ""{
             self.labelMessage.text = "Complete The Missing Info!"
         }else {
             self.labelMessage.text = "Successfully Submitted"
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
             
     }
     @IBAction func buttonClear(_ sender: UIButton) {
+        self.txtArea.isHidden = true
         self.txtFirstName.text = ""
         self.txtLastName.text = ""
         self.txtCountry.text = ""
