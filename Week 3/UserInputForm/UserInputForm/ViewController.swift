@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonAdd(_ sender: UIButton) {
         self.txtArea.isHidden = false
+        
         self.txtArea.text = "\n\nFull Name : \(self.txtFirstName.text!) \(self.txtLastName.text!)\nCountry : \(self.txtCountry.text!)\nAge : \(self.txtAge.text!)"
     }
     @IBAction func buttonSubmit(_ sender: UIButton) {
@@ -30,10 +31,12 @@ class ViewController: UIViewController {
         }else {
             self.labelMessage.text = "Successfully Submitted"
         }
+        self.labelMessage.isHidden = false
             
     }
     @IBAction func buttonClear(_ sender: UIButton) {
         self.txtArea.isHidden = true
+        self.labelMessage.isHidden = true
         self.txtFirstName.text = ""
         self.txtLastName.text = ""
         self.txtCountry.text = ""
