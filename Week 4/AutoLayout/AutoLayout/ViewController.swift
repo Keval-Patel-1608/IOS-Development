@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.textBirthDate.delegate = self
+//        self.textBirthDate.delegate = self
         
         clickAcceptButton.isEnabled = false
             [textFirstName, textSurname, textAddress, textCity, textBirthDate].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
@@ -53,32 +53,43 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
 //        self.checkAge(<#T##textField: UITextField##UITextField#>)
 //        textFieldDidEndEditing(<#T##UITextField#>)
+        let testformatter = DateFormatter()
+        testformatter.dateFormat = "dd/MM/yyyy"
+        let date = testformatter.date(from: self.textBirthDate.text ?? "")
+        var age = 0
+        age = Calendar.current.dateComponents([.year], from: date ?? Date(), to: Date()).year ?? 0
+        if age >= 18 {
+            self.textViewArea.text = "I, \(self.textFirstName.text ?? "") \(self.textSurname.text ?? ""), currently living at \(self.textAddress.text ?? "") in the city of \(self.textCity.text ?? "") do hereby accept the terms and conditions assignment. \n\nI am \(age) and therefore am able to accept the conditions of this assignment."
+            clickAcceptButton.isEnabled = true
+        } else {
+            self.textViewArea.text = "Sorry, Age should be 18 or higher to accept terms."
+            clickAcceptButton.isEnabled = false
+        }
         
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-//    private func checkAge(_ textField: UITextField) {
-        if self.textBirthDate == textField {
-            let testformatter = DateFormatter()
-            testformatter.dateFormat = "dd/MM/yyyy"
-            let date = testformatter.date(from: self.textBirthDate.text ?? "")
-            let age = Calendar.current.dateComponents([.year], from: date ?? Date(), to: Date()).year ?? 0
-            if age >= 18 {
-                self.textViewArea.text = "I, \(self.textFirstName.text ?? "") \(self.textSurname.text ?? ""), currently living at \(self.textAddress.text ?? "") in the city of \(self.textCity.text ?? "") do hereby accept the terms and conditions assignment. \n\nI am \(age) and therefore am able to accept the conditions of this assignment."
-                clickAcceptButton.isEnabled = true
-            } else {
-                self.textViewArea.text = "Sorry, Age should be 18 or higher to accept terms."
-                clickAcceptButton.isEnabled = false
-            }
-            // and add other validation
-        }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        return true
 //    }
-    }
+    
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        if self.textBirthDate == textField {
+//            let testformatter = DateFormatter()
+//            testformatter.dateFormat = "dd/MM/yyyy"
+//            let date = testformatter.date(from: self.textBirthDate.text ?? "")
+//            var age = 0
+//            age = Calendar.current.dateComponents([.year], from: date ?? Date(), to: Date()).year ?? 0
+//            if age >= 18 {
+//                self.textViewArea.text = "I, \(self.textFirstName.text ?? "") \(self.textSurname.text ?? ""), currently living at \(self.textAddress.text ?? "") in the city of \(self.textCity.text ?? "") do hereby accept the terms and conditions assignment. \n\nI am \(age) and therefore am able to accept the conditions of this assignment."
+//                clickAcceptButton.isEnabled = true
+//            } else {
+//                self.textViewArea.text = "Sorry, Age should be 18 or higher to accept terms."
+//                clickAcceptButton.isEnabled = false
+//            }
+//            // and add other validation
+//        }
+//    }
     
     @IBAction func clickDeclineButton(_ sender: UIButton) {
         self.clearAllFields()
