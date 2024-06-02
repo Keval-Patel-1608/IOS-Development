@@ -25,7 +25,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-wD-eBd">
                                 <rect key="frame" x="20" y="126.33333333333334" width="390" height="112.33333333333334"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nzw-fc-NNG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terms 1" translatesAutoresizingMaskIntoConstraints="NO" id="nzw-fc-NNG">
                                         <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="112.33333333333333"/>
                                         <color key="backgroundColor" red="0.0915032707" green="0.25705754110000001" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.0915032707" green="0.25705754110000001" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,11 +33,11 @@
                                             <constraint firstAttribute="width" secondItem="nzw-fc-NNG" secondAttribute="height" multiplier="26:25" id="eU7-Go-Hbk"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DAf-Si-v06">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terms 2" translatesAutoresizingMaskIntoConstraints="NO" id="DAf-Si-v06">
                                         <rect key="frame" x="136.66666666666666" y="0.0" width="116.66666666666666" height="112.33333333333333"/>
                                         <color key="backgroundColor" red="0.93470792359999999" green="0.66005450239999996" blue="0.1086938682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bss-zg-TR6">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terms 3" translatesAutoresizingMaskIntoConstraints="NO" id="bss-zg-TR6">
                                         <rect key="frame" x="273.33333333333331" y="0.0" width="116.66666666666669" height="112.33333333333333"/>
                                         <color key="backgroundColor" red="0.55050505049999998" green="0.3887453267" blue="0.064016279179999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
@@ -231,6 +231,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Terms 1" width="2276" height="1519"/>
+        <image name="Terms 2" width="1683.3333740234375" height="1122"/>
+        <image name="Terms 3" width="1782.6666259765625" height="1188.3333740234375"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

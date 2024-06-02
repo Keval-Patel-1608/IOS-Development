@@ -5,6 +5,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         self.textViewArea.text = "Please fill all the missing Info!"
         super.viewDidLoad()
+        
         clickAcceptButton.isEnabled = false
         [textFirstName, textSurname, textAddress, textCity, textBirthDate].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
     }
