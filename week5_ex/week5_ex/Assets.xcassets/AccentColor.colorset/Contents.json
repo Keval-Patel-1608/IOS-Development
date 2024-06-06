@@ -2,8 +2,8 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "universal",
-        "reference" : "systemGrayColor"
+        "platform" : "tvos",
+        "reference" : "systemPurpleColor"
       },
       "idiom" : "universal"
     }

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZx-qC-rXY">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +14,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="2M8-jQ-X7G"/>
                     <navigationItem key="navigationItem" id="VPJ-H6-Y9I"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QnJ-de-en1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -26,56 +25,49 @@
             </objects>
             <point key="canvasLocation" x="-3650" y="1899"/>
         </scene>
-        <!--Rating-->
+        <!--Page 2-->
         <scene sceneID="h76-2W-24Y">
             <objects>
                 <viewController id="40l-oo-53B" sceneMemberID="viewController">
                     <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="PnV-bC-suS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D-Day Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLL-Be-bZ2">
-                                <rect key="frame" x="133" y="129" width="148.33333333333337" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="j9j-h1-Tiv">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiny Tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLL-Be-bZ2">
+                                <rect key="frame" x="155.33333333333334" y="188" width="119.33333333333334" height="34.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QCB-sJ-MtD">
-                                <rect key="frame" x="108.66666666666667" y="218" width="196.66666666666663" height="50"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1vl-FD-8S8">
-                                        <rect key="frame" x="0.0" y="-0.33333333333333215" width="38" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="1vl-FD-8S8" secondAttribute="height" multiplier="22:29" id="dgV-Ym-2fv"/>
-                                            <constraint firstAttribute="height" constant="50" id="sZA-yS-JJ0"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k4e-qk-wUu">
-                                        <rect key="frame" x="52.999999999999986" y="-0.33333333333333215" width="38" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WuI-K1-HMc">
-                                        <rect key="frame" x="105.99999999999999" y="-0.33333333333333215" width="37.666666666666671" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.leadinghalf.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-7n-ieK">
-                                        <rect key="frame" x="158.66666666666663" y="-0.33333333333333215" width="38" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Perfect for bedtime, this charming tale teaches young children about friendship, bravery, and the joys of exploration." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xtK-CY-OFd">
+                                <rect key="frame" x="50" y="292.33333333333331" width="330" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Axr-8E-c10"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T8w-xb-IEc"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QCB-sJ-MtD" firstAttribute="centerX" secondItem="PnV-bC-suS" secondAttribute="centerX" id="67A-fr-FD1"/>
+                            <constraint firstItem="T8w-xb-IEc" firstAttribute="trailing" secondItem="xtK-CY-OFd" secondAttribute="trailing" constant="50" id="9gs-z4-LN4"/>
                             <constraint firstItem="gLL-Be-bZ2" firstAttribute="centerX" secondItem="PnV-bC-suS" secondAttribute="centerX" id="B5K-eq-pYe"/>
                             <constraint firstItem="gLL-Be-bZ2" firstAttribute="top" secondItem="T8w-xb-IEc" secondAttribute="top" constant="85" id="G7e-Nq-4H0"/>
-                            <constraint firstItem="QCB-sJ-MtD" firstAttribute="top" secondItem="gLL-Be-bZ2" secondAttribute="bottom" constant="60" id="LGX-dl-kyF"/>
+                            <constraint firstItem="xtK-CY-OFd" firstAttribute="top" secondItem="gLL-Be-bZ2" secondAttribute="bottom" constant="70" id="NUK-6r-osN"/>
+                            <constraint firstItem="xtK-CY-OFd" firstAttribute="leading" secondItem="T8w-xb-IEc" secondAttribute="leading" constant="50" id="eAS-aG-Dhk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rating" id="GLx-tY-3qx">
+                    <tabBarItem key="tabBarItem" title="Page 2" id="GLx-tY-3qx">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -83,44 +75,50 @@
             </objects>
             <point key="canvasLocation" x="2175" y="1154"/>
         </scene>
-        <!--Description-->
+        <!--Page 1-->
         <scene sceneID="YVr-u6-1tQ">
             <objects>
                 <viewController id="tG7-KW-sqv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ol-uv-MtB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D-Day Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-Hn-kWs">
-                                <rect key="frame" x="132.66666666666666" y="129" width="148.99999999999997" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="4PF-T2-UB5">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiny Tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-Hn-kWs">
+                                <rect key="frame" x="155.33333333333334" y="188" width="119.33333333333334" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="46P-fi-cDB">
-                                <rect key="frame" x="50" y="258" width="314" height="150"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Join Tiny Tim, a brave little mouse, as he embarks on fun-filled adventures in the magical meadow. " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="46P-fi-cDB">
+                                <rect key="frame" x="50" y="291.33333333333331" width="330" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="7Bq-nz-LaK"/>
                                 </constraints>
-                                <string key="text">When an elite group of American soldiers are ordered to take out a series of German machine gun nests, they find themselves blindly venturing into hostile territory.</string>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="81R-Qh-zUB"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="46P-fi-cDB" firstAttribute="leading" secondItem="81R-Qh-zUB" secondAttribute="leading" constant="50" id="3yr-TG-frM"/>
-                            <constraint firstItem="46P-fi-cDB" firstAttribute="top" secondItem="hIN-Hn-kWs" secondAttribute="bottom" constant="100" id="IMw-lk-J1K"/>
                             <constraint firstItem="hIN-Hn-kWs" firstAttribute="centerX" secondItem="6Ol-uv-MtB" secondAttribute="centerX" id="ZnM-kc-hk6"/>
+                            <constraint firstItem="46P-fi-cDB" firstAttribute="top" secondItem="hIN-Hn-kWs" secondAttribute="bottom" constant="70" id="h1y-ua-fi5"/>
                             <constraint firstItem="hIN-Hn-kWs" firstAttribute="top" secondItem="81R-Qh-zUB" secondAttribute="top" constant="85" id="iSj-LO-mR7"/>
                             <constraint firstItem="46P-fi-cDB" firstAttribute="centerX" secondItem="6Ol-uv-MtB" secondAttribute="centerX" id="wDV-9X-QDA"/>
                             <constraint firstItem="81R-Qh-zUB" firstAttribute="trailing" secondItem="46P-fi-cDB" secondAttribute="trailing" constant="50" id="xGA-6m-OSK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Description" id="Fig-UN-Dse">
+                    <tabBarItem key="tabBarItem" title="Page 1" id="Fig-UN-Dse">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -136,7 +134,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="square.and.arrow.up" catalog="system" id="3qe-Bb-8S6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="1" green="0.60588723054427884" blue="0.64339752515519255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="standardAppearance"/>
                         <userDefinedRuntimeAttributes>
@@ -157,38 +155,36 @@
             <objects>
                 <viewController id="1VT-oy-bRW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DsU-Od-qQf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More About the GoStream App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-f1-AKg">
-                                <rect key="frame" x="89.666666666666686" y="50" width="235" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More About the StoryTime App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-f1-AKg">
+                                <rect key="frame" x="89.333333333333329" y="109" width="251.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-I1-iMj">
-                                <rect key="frame" x="30" y="141" width="354" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="30" y="180" width="370" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="8Kq-nR-yZi"/>
+                                    <constraint firstAttribute="height" constant="400" id="8Kq-nR-yZi"/>
                                 </constraints>
-                                <string key="text">Discover, rate, and review your favorite movies with GOStream, the ultimate app for movie enthusiasts! Whether you're a casual viewer or a cinephile, GOStream offers a seamless experience to explore new releases, classic films, and hidden gems. 
-
-Create personalized watchlists, follow fellow movie lovers, and stay updated with the latest trends in the film industry. With GOStream, your next great movie experience is just a tap away!</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <mutableString key="text">Level 1: Early Explorers (Ages 3-5)Simple and Sweet: These short and engaging stories are perfect for our youngest readers. With easy-to-follow plots, colorful illustrations, and simple language, these tales help nurture a love for reading and stimulate imagination.Level 2: Curious Kids (Ages 6-8)Imaginative and Fun: These stories feature slightly more complex plots and a richer vocabulary, designed to keep the interest of curious minds. With enchanting adventures and moral lessons, these tales encourage creativity and empathy.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Buw-HX-yL3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PfC-f1-AKg" firstAttribute="centerX" secondItem="DsU-Od-qQf" secondAttribute="centerX" id="DGt-O7-HiC"/>
                             <constraint firstItem="PfC-f1-AKg" firstAttribute="top" secondItem="Buw-HX-yL3" secondAttribute="top" constant="50" id="DxQ-s8-RdD"/>
                             <constraint firstItem="Buw-HX-yL3" firstAttribute="trailing" secondItem="fWk-I1-iMj" secondAttribute="trailing" constant="30" id="cZO-6L-UHL"/>
                             <constraint firstItem="fWk-I1-iMj" firstAttribute="leading" secondItem="Buw-HX-yL3" secondAttribute="leading" constant="30" id="iOZ-Kw-OsR"/>
                             <constraint firstItem="fWk-I1-iMj" firstAttribute="centerX" secondItem="DsU-Od-qQf" secondAttribute="centerX" id="qxj-BP-ZOJ"/>
-                            <constraint firstItem="fWk-I1-iMj" firstAttribute="top" secondItem="PfC-f1-AKg" secondAttribute="bottom" constant="70" id="vBD-6g-A4G"/>
+                            <constraint firstItem="fWk-I1-iMj" firstAttribute="top" secondItem="PfC-f1-AKg" secondAttribute="bottom" constant="50" id="vBD-6g-A4G"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hSQ-6D-bIf"/>
@@ -197,105 +193,98 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
             </objects>
             <point key="canvasLocation" x="-2436" y="2824"/>
         </scene>
-        <!--Rating-->
+        <!--Page 2-->
         <scene sceneID="PZO-u6-olU">
             <objects>
                 <viewController id="cM0-xo-Trb" sceneMemberID="viewController">
                     <view key="view" alpha="0.94999998807907104" contentMode="scaleToFill" id="c1j-rJ-uwd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Bang Theory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1z-4k-UQS">
-                                <rect key="frame" x="112.66666666666669" y="129" width="189" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jPu-LO-5f5">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enchanted Forest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1z-4k-UQS">
+                                <rect key="frame" x="101" y="188" width="228" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eay-7W-vza">
-                                <rect key="frame" x="82.333333333333329" y="218" width="249.33333333333337" height="50"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D4X-f9-ds5">
-                                        <rect key="frame" x="0.0" y="-0.33333333333333215" width="37.666666666666664" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="D4X-f9-ds5" secondAttribute="height" multiplier="22:29" id="imw-ju-qnw"/>
-                                            <constraint firstAttribute="height" constant="50" id="mwH-a0-f1Z"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-n7-0oe">
-                                        <rect key="frame" x="52.666666666666671" y="-0.33333333333333215" width="38" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YbB-B8-aFd">
-                                        <rect key="frame" x="105.66666666666667" y="-0.33333333333333215" width="38.000000000000014" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TkK-7b-6Cz">
-                                        <rect key="frame" x="158.66666666666669" y="-0.33333333333333215" width="38" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.leadinghalf.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-8J-rtz">
-                                        <rect key="frame" x="211.66666666666669" y="-0.33333333333333215" width="37.666666666666657" height="49.666666666666657"/>
-                                        <color key="tintColor" red="1" green="0.7061612357" blue="0.11628645210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This delightful story encourages imagination and teaches important lessons about kindness and teamwork." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="4CE-wP-RMa">
+                                <rect key="frame" x="50" y="291.33333333333331" width="330" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="oua-Kj-7RU"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Le3-qK-DkY"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eay-7W-vza" firstAttribute="centerX" secondItem="c1j-rJ-uwd" secondAttribute="centerX" id="FXk-Mz-vFG"/>
+                            <constraint firstItem="4CE-wP-RMa" firstAttribute="leading" secondItem="Le3-qK-DkY" secondAttribute="leading" constant="50" id="AEG-ZU-emt"/>
                             <constraint firstItem="t1z-4k-UQS" firstAttribute="centerX" secondItem="c1j-rJ-uwd" secondAttribute="centerX" id="WRQ-YE-C6P"/>
+                            <constraint firstItem="4CE-wP-RMa" firstAttribute="top" secondItem="t1z-4k-UQS" secondAttribute="bottom" constant="70" id="o3f-Fy-mku"/>
                             <constraint firstItem="t1z-4k-UQS" firstAttribute="top" secondItem="Le3-qK-DkY" secondAttribute="top" constant="85" id="oMf-iP-sYB"/>
-                            <constraint firstItem="eay-7W-vza" firstAttribute="top" secondItem="t1z-4k-UQS" secondAttribute="bottom" constant="60" id="yzy-2u-kR7"/>
+                            <constraint firstItem="Le3-qK-DkY" firstAttribute="trailing" secondItem="4CE-wP-RMa" secondAttribute="trailing" constant="50" id="pmn-Wh-Hfr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rating" id="eWh-NL-Rps">
+                    <tabBarItem key="tabBarItem" title="Page 2" id="eWh-NL-Rps">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlT-u4-MRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="3342"/>
+            <point key="canvasLocation" x="2173.953488372093" y="3341.8454935622321"/>
         </scene>
-        <!--Description-->
+        <!--Page 1-->
         <scene sceneID="G2i-zY-B5c">
             <objects>
                 <viewController id="8PW-h6-yO6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hLJ-ab-DAH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Bang Theory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afD-VO-D74">
-                                <rect key="frame" x="112.66666666666669" y="129" width="189" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-uC-buc">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enchanted Forest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afD-VO-D74">
+                                <rect key="frame" x="101" y="188" width="228" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-9X-nLL">
-                                <rect key="frame" x="50" y="258" width="314" height="150"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Follow Ella, a curious young girl, as she discovers a magical forest where animals talk and fairies dance." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-9X-nLL">
+                                <rect key="frame" x="50" y="291.33333333333331" width="330" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="ID4-7j-K2S"/>
                                 </constraints>
-                                <string key="text">A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.</string>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ofa-Uk-kFj"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="afD-VO-D74" firstAttribute="centerX" secondItem="hLJ-ab-DAH" secondAttribute="centerX" id="7P4-nt-pr7"/>
                             <constraint firstItem="EAw-9X-nLL" firstAttribute="leading" secondItem="ofa-Uk-kFj" secondAttribute="leading" constant="50" id="9Pl-Kt-zYW"/>
+                            <constraint firstItem="EAw-9X-nLL" firstAttribute="top" secondItem="afD-VO-D74" secondAttribute="bottom" constant="70" id="FVV-um-Xxk"/>
                             <constraint firstItem="ofa-Uk-kFj" firstAttribute="trailing" secondItem="EAw-9X-nLL" secondAttribute="trailing" constant="50" id="IaI-5D-JNB"/>
                             <constraint firstItem="afD-VO-D74" firstAttribute="top" secondItem="ofa-Uk-kFj" secondAttribute="top" constant="85" id="VAf-2R-hu2"/>
-                            <constraint firstItem="EAw-9X-nLL" firstAttribute="top" secondItem="afD-VO-D74" secondAttribute="bottom" constant="100" id="xJ7-g5-0G3"/>
                             <constraint firstItem="EAw-9X-nLL" firstAttribute="centerX" secondItem="hLJ-ab-DAH" secondAttribute="centerX" id="xs2-GP-QSO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Description" id="j2k-fe-uO0">
+                    <tabBarItem key="tabBarItem" title="Page 1" id="j2k-fe-uO0">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -311,7 +300,7 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="square.and.arrow.up" catalog="system" id="4mE-n0-0ci">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="1" green="0.60887175800000004" blue="0.64201647039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="standardAppearance"/>
                         <userDefinedRuntimeAttributes>
@@ -332,24 +321,30 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
             <objects>
                 <viewController id="PW8-OT-hy2" customClass="ViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n56-P1-VMi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOVIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-B8-WIq">
-                                <rect key="frame" x="161.66666666666666" y="104" width="91" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TSV-Ko-15l">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-B8-WIq">
+                                <rect key="frame" x="168.33333333333334" y="163" width="93.666666666666657" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn0-DG-Yay">
-                                <rect key="frame" x="132" y="273" width="150" height="35"/>
+                                <rect key="frame" x="140" y="336.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Iuh-hJ-1qR"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="D-Day">
+                                <buttonConfiguration key="configuration" style="filled" title="Tiny Tim">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -362,14 +357,14 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2U-6J-Ulf">
-                                <rect key="frame" x="132" y="348" width="150" height="35"/>
+                                <rect key="frame" x="140" y="411.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="NjB-G1-if6"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="The Godfather">
+                                <buttonConfiguration key="configuration" style="filled" title="Talking Tree">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -383,7 +378,7 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IEv-Ax-9ik"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZmF-B8-WIq" firstAttribute="top" secondItem="IEv-Ax-9ik" secondAttribute="top" constant="60" id="ESf-XW-4gk"/>
                             <constraint firstItem="W2U-6J-Ulf" firstAttribute="centerX" secondItem="n56-P1-VMi" secondAttribute="centerX" id="a28-Fj-CHV"/>
@@ -395,7 +390,7 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Trn-UX-4yv"/>
                     <navigationItem key="navigationItem" customizationIdentifier="" id="B00-83-ej0">
-                        <barButtonItem key="backBarButtonItem" title="Movie" id="WAH-od-Rmt"/>
+                        <barButtonItem key="backBarButtonItem" title="Level 1" id="WAH-od-Rmt"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1de-MU-d23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -407,31 +402,35 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
             <objects>
                 <viewController id="clk-pL-rpu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v6I-dw-Ppo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Godfather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-bH-and">
-                                <rect key="frame" x="124" y="104" width="166" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="NlP-Lt-2tu">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talking Tree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-bH-and">
+                                <rect key="frame" x="133.66666666666669" y="163" width="162.66666666666669" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="N4Q-0m-ifR">
-                                <rect key="frame" x="50" y="233" width="314" height="150"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="50" y="296.33333333333331" width="330" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="tQi-UU-10m"/>
                                 </constraints>
-                                <string key="text">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.
-
-</string>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <string key="text">Tommy, a curious boy, discovers a talking tree in the park. The tree shares stories of the past and teaches Tommy about the changing seasons and the importance of caring for the environment.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e73-20-iCz"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="N4Q-0m-ifR" firstAttribute="top" secondItem="iQ4-bH-and" secondAttribute="bottom" constant="100" id="2CV-OU-eNw"/>
                             <constraint firstItem="e73-20-iCz" firstAttribute="trailing" secondItem="N4Q-0m-ifR" secondAttribute="trailing" constant="50" id="DiB-Mc-9Fq"/>
@@ -454,24 +453,30 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
             <objects>
                 <viewController id="BRl-Ss-fvS" customClass="ViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wR-mO-2xE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01G-JM-FpQ">
-                                <rect key="frame" x="160.66666666666666" y="104" width="93" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EJp-SO-dKb">
+                                <rect key="frame" x="0.0" y="-10" width="430" height="953"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01G-JM-FpQ">
+                                <rect key="frame" x="168.33333333333334" y="163" width="93.666666666666657" height="34.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-gw-hiJ">
-                                <rect key="frame" x="132" y="273" width="150" height="35"/>
+                                <rect key="frame" x="136" y="337.33333333333331" width="158" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="3PR-TR-9u4"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Big Bang Theory">
+                                <buttonConfiguration key="configuration" style="filled" title="Enchanted Forest">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -485,7 +490,7 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dAv-f2-bWk"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4f6-gw-hiJ" firstAttribute="top" secondItem="01G-JM-FpQ" secondAttribute="bottom" constant="140" id="EmW-Fb-Ifv"/>
                             <constraint firstItem="01G-JM-FpQ" firstAttribute="centerX" secondItem="6wR-mO-2xE" secondAttribute="centerX" id="WSh-hb-vhT"/>
@@ -495,7 +500,7 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="eJL-zA-caX"/>
                     <navigationItem key="navigationItem" id="JDk-rB-90h">
-                        <barButtonItem key="backBarButtonItem" title="Series" id="Yc4-1c-fMT"/>
+                        <barButtonItem key="backBarButtonItem" title="Level 2" id="Yc4-1c-fMT"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SP-YV-JP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -507,24 +512,30 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
             <objects>
                 <viewController id="CCM-25-eeN" customClass="ViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wm-tY-Ll1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoStream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBJ-JC-7Ld">
-                                <rect key="frame" x="150" y="104" width="114" height="29"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Q8L-cP-kcx">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="953"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoryTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBJ-JC-7Ld">
+                                <rect key="frame" x="146.33333333333331" y="163" width="137.33333333333331" height="34.333333333333343"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWj-f2-w9a">
-                                <rect key="frame" x="132" y="273" width="150" height="35"/>
+                                <rect key="frame" x="140" y="337.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="i91-u8-ChZ"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Movies">
+                                <buttonConfiguration key="configuration" style="filled" title="LEVEL 1">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -537,14 +548,14 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naA-yB-NS3">
-                                <rect key="frame" x="132" y="348" width="150" height="35"/>
+                                <rect key="frame" x="140" y="412.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="660-TM-fzD"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Series">
+                                <buttonConfiguration key="configuration" style="filled" title="LEVEL 2">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -557,7 +568,7 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4C-D3-qvM">
-                                <rect key="frame" x="324" y="681" width="50" height="50"/>
+                                <rect key="frame" x="340" y="843" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kM0-eH-Aaf"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="wdr-3Z-bCY"/>
@@ -565,14 +576,17 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="i">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                    <color key="baseForegroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="26"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="1VT-oy-bRW" kind="popoverPresentation" popoverAnchorView="q4C-D3-qvM" id="5j6-p7-mU0">
@@ -582,9 +596,10 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XNx-fk-idd"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GBJ-JC-7Ld" firstAttribute="top" secondItem="XNx-fk-idd" secondAttribute="top" constant="60" id="Pjh-HR-faa"/>
+                            <constraint firstItem="q4C-D3-qvM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XNx-fk-idd" secondAttribute="leading" symbolic="YES" id="R27-Lq-hoF"/>
                             <constraint firstItem="BWj-f2-w9a" firstAttribute="centerX" secondItem="0Wm-tY-Ll1" secondAttribute="centerX" id="T0w-SU-4V9"/>
                             <constraint firstItem="XNx-fk-idd" firstAttribute="trailing" secondItem="q4C-D3-qvM" secondAttribute="trailing" constant="40" id="gg3-wb-xT0"/>
                             <constraint firstItem="BWj-f2-w9a" firstAttribute="top" secondItem="GBJ-JC-7Ld" secondAttribute="bottom" constant="140" id="k9r-hb-eyE"/>
@@ -601,21 +616,11 @@ Create personalized watchlists, follow fellow movie lovers, and stay updated wit
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HN-zJ-ynl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2498" y="1899"/>
+            <point key="canvasLocation" x="-2499.0697674418602" y="1898.4978540772534"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="800" height="1427"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
-        <image name="star.leadinghalf.filled" catalog="system" width="128" height="116"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

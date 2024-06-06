@@ -15,24 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Stream..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxd-cz-mDM">
-                                <rect key="frame" x="141.66666666666666" y="415.66666666666669" width="110" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fQm-cs-1HB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxd-cz-mDM">
+                                <rect key="frame" x="125.00000000000001" y="415.66666666666669" width="143.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.19991349948615034" blue="0.42797454232091581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.69349405976077882" blue="0.66537160459066647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fQm-cs-1HB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Eb-UU-fUc"/>
                             <constraint firstItem="Hxd-cz-mDM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="CWt-h7-NAB"/>
+                            <constraint firstItem="Hxd-cz-mDM" firstAttribute="top" secondItem="fQm-cs-1HB" secondAttribute="bottom" constant="-436.33333333333331" id="SrZ-mo-uum"/>
                             <constraint firstItem="Hxd-cz-mDM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SxH-FG-0ib"/>
+                            <constraint firstItem="fQm-cs-1HB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-59" id="ZU8-69-806"/>
+                            <constraint firstItem="Hxd-cz-mDM" firstAttribute="top" secondItem="fQm-cs-1HB" secondAttribute="bottom" constant="-436.33333333333331" id="hHF-78-uMZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fQm-cs-1HB" secondAttribute="trailing" id="rJA-Id-U4X"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="800" height="1427"/>
+    </resources>
 </document>
