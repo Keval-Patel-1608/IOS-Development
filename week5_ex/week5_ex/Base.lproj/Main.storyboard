@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZx-qC-rXY">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,7 +14,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="2M8-jQ-X7G"/>
                     <navigationItem key="navigationItem" id="VPJ-H6-Y9I"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QnJ-de-en1">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,7 +30,7 @@
             <objects>
                 <viewController id="40l-oo-53B" sceneMemberID="viewController">
                     <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="PnV-bC-suS">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="j9j-h1-Tiv">
@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiny Tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLL-Be-bZ2">
-                                <rect key="frame" x="155.33333333333334" y="188" width="119.33333333333334" height="34.333333333333343"/>
+                                <rect key="frame" x="147.33333333333334" y="129" width="119.33333333333334" height="34.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Perfect for bedtime, this charming tale teaches young children about friendship, bravery, and the joys of exploration." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xtK-CY-OFd">
-                                <rect key="frame" x="50" y="292.33333333333331" width="330" height="150"/>
+                                <rect key="frame" x="50" y="233.33333333333337" width="314" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.99859100580000004" green="0.83197027440000004" blue="0.84479504819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -80,7 +80,7 @@
             <objects>
                 <viewController id="tG7-KW-sqv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ol-uv-MtB">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="4PF-T2-UB5">
@@ -88,7 +88,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiny Tim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-Hn-kWs">
-                                <rect key="frame" x="155.33333333333334" y="188" width="119.33333333333334" height="33.333333333333343"/>
+                                <rect key="frame" x="147.33333333333334" y="129" width="119.33333333333334" height="33.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Join Tiny Tim, a brave little mouse, as he embarks on fun-filled adventures in the magical meadow. " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="46P-fi-cDB">
-                                <rect key="frame" x="50" y="291.33333333333331" width="330" height="150"/>
+                                <rect key="frame" x="50" y="232.33333333333337" width="314" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="7Bq-nz-LaK"/>
@@ -155,22 +155,28 @@
             <objects>
                 <viewController id="1VT-oy-bRW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DsU-Od-qQf">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More About the StoryTime App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-f1-AKg">
-                                <rect key="frame" x="89.333333333333329" y="109" width="251.33333333333337" height="21"/>
+                                <rect key="frame" x="81.333333333333329" y="50" width="251.33333333333337" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-I1-iMj">
-                                <rect key="frame" x="30" y="180" width="370" height="400"/>
+                                <rect key="frame" x="30" y="121" width="354" height="400"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="8Kq-nR-yZi"/>
                                 </constraints>
-                                <mutableString key="text">Level 1: Early Explorers (Ages 3-5)Simple and Sweet: These short and engaging stories are perfect for our youngest readers. With easy-to-follow plots, colorful illustrations, and simple language, these tales help nurture a love for reading and stimulate imagination.Level 2: Curious Kids (Ages 6-8)Imaginative and Fun: These stories feature slightly more complex plots and a richer vocabulary, designed to keep the interest of curious minds. With enchanting adventures and moral lessons, these tales encourage creativity and empathy.</mutableString>
+                                <string key="text">Level 1: Early Explorers (Ages 3-5)
+
+Simple and Sweet: These short and engaging stories are perfect for our youngest readers. With easy-to-follow plots, colorful illustrations, and simple language, these tales help nurture a love for reading and stimulate imagination.
+
+Level 2: Curious Kids (Ages 6-8)
+
+Imaginative and Fun: These stories feature slightly more complex plots and a richer vocabulary, designed to keep the interest of curious minds. With enchanting adventures and moral lessons, these tales encourage creativity and empathy.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -198,7 +204,7 @@
             <objects>
                 <viewController id="cM0-xo-Trb" sceneMemberID="viewController">
                     <view key="view" alpha="0.94999998807907104" contentMode="scaleToFill" id="c1j-rJ-uwd">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jPu-LO-5f5">
@@ -206,7 +212,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enchanted Forest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1z-4k-UQS">
-                                <rect key="frame" x="101" y="188" width="228" height="33.333333333333343"/>
+                                <rect key="frame" x="93" y="129" width="228" height="33.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -214,7 +220,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This delightful story encourages imagination and teaches important lessons about kindness and teamwork." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="4CE-wP-RMa">
-                                <rect key="frame" x="50" y="291.33333333333331" width="330" height="150"/>
+                                <rect key="frame" x="50" y="232.33333333333337" width="314" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="oua-Kj-7RU"/>
@@ -247,7 +253,7 @@
             <objects>
                 <viewController id="8PW-h6-yO6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hLJ-ab-DAH">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-uC-buc">
@@ -255,7 +261,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enchanted Forest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afD-VO-D74">
-                                <rect key="frame" x="101" y="188" width="228" height="33.333333333333343"/>
+                                <rect key="frame" x="93" y="129" width="228" height="33.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -263,7 +269,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Follow Ella, a curious young girl, as she discovers a magical forest where animals talk and fairies dance." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-9X-nLL">
-                                <rect key="frame" x="50" y="291.33333333333331" width="330" height="150"/>
+                                <rect key="frame" x="50" y="232.33333333333337" width="314" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="ID4-7j-K2S"/>
@@ -321,7 +327,7 @@
             <objects>
                 <viewController id="PW8-OT-hy2" customClass="ViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n56-P1-VMi">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TSV-Ko-15l">
@@ -329,7 +335,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-B8-WIq">
-                                <rect key="frame" x="168.33333333333334" y="163" width="93.666666666666657" height="33.333333333333343"/>
+                                <rect key="frame" x="160.33333333333334" y="104" width="93.666666666666657" height="33.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -337,7 +343,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn0-DG-Yay">
-                                <rect key="frame" x="140" y="336.33333333333331" width="150" height="35"/>
+                                <rect key="frame" x="132" y="277.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Iuh-hJ-1qR"/>
@@ -357,7 +363,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2U-6J-Ulf">
-                                <rect key="frame" x="140" y="411.33333333333331" width="150" height="35"/>
+                                <rect key="frame" x="132" y="352.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="NjB-G1-if6"/>
@@ -402,7 +408,7 @@
             <objects>
                 <viewController id="clk-pL-rpu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v6I-dw-Ppo">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="NlP-Lt-2tu">
@@ -410,7 +416,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talking Tree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-bH-and">
-                                <rect key="frame" x="133.66666666666669" y="163" width="162.66666666666669" height="33.333333333333343"/>
+                                <rect key="frame" x="125.66666666666667" y="104" width="162.66666666666663" height="33.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -418,7 +424,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="N4Q-0m-ifR">
-                                <rect key="frame" x="50" y="296.33333333333331" width="330" height="150"/>
+                                <rect key="frame" x="50" y="237.33333333333337" width="314" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="tQi-UU-10m"/>
@@ -453,7 +459,7 @@
             <objects>
                 <viewController id="BRl-Ss-fvS" customClass="ViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wR-mO-2xE">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EJp-SO-dKb">
@@ -461,7 +467,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01G-JM-FpQ">
-                                <rect key="frame" x="168.33333333333334" y="163" width="93.666666666666657" height="34.333333333333343"/>
+                                <rect key="frame" x="160.33333333333334" y="104" width="93.666666666666657" height="34.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -469,7 +475,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-gw-hiJ">
-                                <rect key="frame" x="136" y="337.33333333333331" width="158" height="35"/>
+                                <rect key="frame" x="128" y="278.33333333333331" width="158" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="3PR-TR-9u4"/>
@@ -512,7 +518,7 @@
             <objects>
                 <viewController id="CCM-25-eeN" customClass="ViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wm-tY-Ll1">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Q8L-cP-kcx">
@@ -520,7 +526,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoryTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBJ-JC-7Ld">
-                                <rect key="frame" x="146.33333333333331" y="163" width="137.33333333333331" height="34.333333333333343"/>
+                                <rect key="frame" x="138.33333333333331" y="104" width="137.33333333333331" height="34.333333333333343"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.19991349950000001" blue="0.42797454229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -528,7 +534,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWj-f2-w9a">
-                                <rect key="frame" x="140" y="337.33333333333331" width="150" height="35"/>
+                                <rect key="frame" x="132" y="278.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="i91-u8-ChZ"/>
@@ -548,7 +554,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naA-yB-NS3">
-                                <rect key="frame" x="140" y="412.33333333333331" width="150" height="35"/>
+                                <rect key="frame" x="132" y="353.33333333333331" width="150" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="660-TM-fzD"/>
@@ -568,7 +574,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4C-D3-qvM">
-                                <rect key="frame" x="340" y="843" width="50" height="50"/>
+                                <rect key="frame" x="324" y="681" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kM0-eH-Aaf"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="wdr-3Z-bCY"/>
