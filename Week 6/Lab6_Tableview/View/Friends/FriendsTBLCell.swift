@@ -2,7 +2,7 @@
 //  FriendsTBLCell.swift
 //  Lab6_Tableview
 //
-//  Created by Adeesh on 2024-07-07.
+//  Created by user244 on 2024-07-06.
 //
 
 import UIKit
@@ -20,18 +20,16 @@ class FriendsTBLCell: UITableViewCell {
     static let identifier = String(describing: FriendsTBLCell.self)
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
         
     func configureCell(value: Friend) {
         self.viewBg.layer.cornerRadius = 10
-        self.viewBg.backgroundColor = .random()
+        self.viewBg.backgroundColor =  UIColor(red: 225/255, green: 216/255, blue: 225/255, alpha: 1)
         self.lblName.text = value.name
         self.lblEmail.text = value.email
         self.lblPhone.text = value.phone

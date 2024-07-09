@@ -26,7 +26,7 @@ class ToDoTBLCell: UITableViewCell {
     
     func configureCell(value: String) {
         self.viewBg.layer.cornerRadius = 10
-        self.viewBg.backgroundColor = .random()
+        self.viewBg.backgroundColor = UIColor(red: 225/255, green: 216/255, blue: 225/255, alpha: 1)
         self.lblTitle.text = value
     }
     

@@ -22,7 +22,7 @@ class ToDoVC: UIViewController {
     @IBOutlet weak var sectionPicker: UIPickerView!
     
     
-    var arrToDos: [String: [String]] = ["Work": ["Complete Lab 6", "Complete Mid Term"], "Home": ["Purchase Fruits", "Laundry"]]
+    var arrToDos: [String: [String]] = ["Kitchen Chores": ["Wash Dishes", "Clean Cuntertops"], "Outdoor Chores": ["Mow the Lawn", "Water Plants", "Dispose Garbage"]]
     
     var sections: [String] {
         return Array(arrToDos.keys)
@@ -44,7 +44,7 @@ class ToDoVC: UIViewController {
 
     private func configureNavigation() {
         self.title = "To Do"
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addSection))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addSection))
     }
     private func configureOutlets() {
         self.viewTop.addDropShadow(shadowColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1).cgColor)

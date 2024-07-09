@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Lab6_Tableview
 //
-//  Created by Adeesh on 2024-06-21.
+//  Created by user244 on 2024-07-06.
 //
 
 import UIKit

@@ -22,36 +22,23 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-ew-MWw">
                                         <rect key="frame" x="20" y="10" width="333" height="86"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CkR-gj-i39">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLJ-Vb-ASE">
                                                 <rect key="frame" x="0.0" y="0.0" width="333" height="38"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLJ-Vb-ASE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="276" height="38"/>
-                                                        <color key="backgroundColor" red="0.93581091766939184" green="0.88366658758583971" blue="0.9697602391242981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Select Section">
-                                                            <color key="titleColor" systemColor="systemPurpleColor"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="btnSelectSectionClicked:" destination="kSm-7n-09h" eventType="touchUpInside" id="3kR-A5-ZYp"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-s3-svx">
-                                                        <rect key="frame" x="286" y="0.0" width="47" height="38"/>
-                                                        <color key="backgroundColor" red="0.92849761249999996" green="0.87388092279999996" blue="0.96076172589999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
-                                                            <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                                <color key="backgroundColor" red="0.93581091766939184" green="0.88366658758583971" blue="0.9697602391242981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Select Section">
+                                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnSelectSectionClicked:" destination="kSm-7n-09h" eventType="touchUpInside" id="3kR-A5-ZYp"/>
+                                                </connections>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter To Do Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFq-qS-Jy7">
                                                 <rect key="frame" x="0.0" y="48" width="333" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -60,27 +47,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zfq-EE-ge2">
-                                        <rect key="frame" x="76.666666666666686" y="106" width="220" height="40"/>
+                                        <rect key="frame" x="20" y="106" width="333" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-h8-dAq">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
-                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Add Row">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="btnActionClicked:" destination="kSm-7n-09h" eventType="touchUpInside" id="jhs-K4-s9J"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-Oj-shn">
-                                                <rect key="frame" x="120" y="0.0" width="100" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6Ks-sw-IZ6"/>
@@ -100,6 +70,23 @@
                                                     <action selector="btnActionClicked:" destination="kSm-7n-09h" eventType="touchUpInside" id="aiO-o5-7MJ"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-h8-dAq">
+                                                <rect key="frame" x="176.66666666666663" y="0.0" width="156.33333333333337" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Add Row">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnActionClicked:" destination="kSm-7n-09h" eventType="touchUpInside" id="jhs-K4-s9J"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -111,9 +98,11 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="zfq-EE-ge2" firstAttribute="centerX" secondItem="kb2-ew-MWw" secondAttribute="centerX" id="2nI-5U-Zdc"/>
+                                    <constraint firstItem="zfq-EE-ge2" firstAttribute="leading" secondItem="hbY-p9-4Ih" secondAttribute="leading" constant="20" id="35T-87-PVa"/>
                                     <constraint firstAttribute="trailing" secondItem="kb2-ew-MWw" secondAttribute="trailing" constant="20" id="4Ql-Xq-nRz"/>
                                     <constraint firstItem="kb2-ew-MWw" firstAttribute="top" secondItem="hbY-p9-4Ih" secondAttribute="top" constant="10" id="87E-0z-FdF"/>
                                     <constraint firstItem="zfq-EE-ge2" firstAttribute="top" secondItem="kb2-ew-MWw" secondAttribute="bottom" constant="10" id="HMY-pR-BG4"/>
+                                    <constraint firstAttribute="trailing" secondItem="zfq-EE-ge2" secondAttribute="trailing" constant="20" id="Hc0-PO-PPn"/>
                                     <constraint firstItem="kb2-ew-MWw" firstAttribute="leading" secondItem="hbY-p9-4Ih" secondAttribute="leading" constant="20" id="RHX-rm-0rU"/>
                                     <constraint firstAttribute="bottom" secondItem="zfq-EE-ge2" secondAttribute="bottom" constant="10" id="WH6-4t-suI"/>
                                 </constraints>
@@ -188,7 +177,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Pfe-oG-dUX"/>
                     <connections>
-                        <outlet property="addNewSection" destination="jbk-s3-svx" id="J6B-UG-c6Z"/>
                         <outlet property="btnPickerDone" destination="0HD-VM-LbO" id="mpZ-ky-JPI"/>
                         <outlet property="btnSelectSection" destination="HLJ-Vb-ASE" id="F0u-qp-NhD"/>
                         <outlet property="sectionPicker" destination="Rl5-bh-Cdg" id="Eed-sh-uAk"/>
@@ -371,12 +359,8 @@
         <image name="car" catalog="system" width="128" height="95"/>
         <image name="doc.text.image" catalog="system" width="115" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

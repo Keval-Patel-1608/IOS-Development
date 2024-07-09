@@ -20,7 +20,7 @@ class CarTBL: UITableViewCell {
         super.awakeFromNib()
         self.viewBG.addDropShadow(shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4).cgColor)
         self.imgCar.layer.cornerRadius = 10
-        self.viewBG.backgroundColor = UIColor(red: 203/255, green: 216/255, blue: 230/255, alpha: 1)
+        self.viewBG.backgroundColor = UIColor(red: 225/255, green: 216/255, blue: 225/255, alpha: 1)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
