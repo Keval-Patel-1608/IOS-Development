@@ -29,23 +29,14 @@ class FriendsTBLCell: UITableViewCell {
         
     func configureCell(value: Friend) {
         self.viewBg.layer.cornerRadius = 10
-        self.viewBg.backgroundColor =  UIColor(red: 225/255, green: 216/255, blue: 225/255, alpha: 1)
+        self.viewBg.backgroundColor =  UIColor(red: 209/255, green: 204/255, blue: 255/255, alpha: 1)
         self.lblName.text = value.name
         self.lblEmail.text = value.email
         self.lblPhone.text = value.phone
         
-        
         self.imgOne.layer.cornerRadius = 10
-        self.imgOne.layer.borderWidth = 2
-        self.imgOne.layer.borderColor = #colorLiteral(red: 0.9348526597, green: 0.9697601199, blue: 0.9562346339, alpha: 1).cgColor
-        
         self.imgTwo.layer.cornerRadius = 10
-        self.imgTwo.layer.borderWidth = 2
-        self.imgTwo.layer.borderColor = #colorLiteral(red: 0.9348526597, green: 0.9697601199, blue: 0.9562346339, alpha: 1).cgColor
-        
         self.imgThree.layer.cornerRadius = 10
-        self.imgThree.layer.borderWidth = 2
-        self.imgThree.layer.borderColor = #colorLiteral(red: 0.9348526597, green: 0.9697601199, blue: 0.9562346339, alpha: 1).cgColor
         
         self.imgOne.image = value.images[0]
         self.imgTwo.image = value.images[1]

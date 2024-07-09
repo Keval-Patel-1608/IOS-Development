@@ -19,14 +19,14 @@ class CarTBL: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.viewBG.addDropShadow(shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4).cgColor)
-        self.imgCar.layer.cornerRadius = 10
-        self.viewBG.backgroundColor = UIColor(red: 225/255, green: 216/255, blue: 225/255, alpha: 1)
+        self.imgCar.layer.cornerRadius = 5
+        self.imgCar.layer.borderWidth = 2
+        self.imgCar.layer.borderColor = UIColor(red: 204/255, green: 153/255, blue: 255/255, alpha: 1).cgColor
+        self.viewBG.backgroundColor = UIColor(red: 209/255, green: 204/255, blue: 255/255, alpha: 1)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configureCell(value: Car) {

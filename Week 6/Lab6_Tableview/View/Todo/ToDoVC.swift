@@ -22,7 +22,7 @@ class ToDoVC: UIViewController {
     @IBOutlet weak var sectionPicker: UIPickerView!
     
     
-    var arrToDos: [String: [String]] = ["Kitchen Chores": ["Wash Dishes", "Clean Cuntertops"], "Outdoor Chores": ["Mow the Lawn", "Water Plants", "Dispose Garbage"]]
+    var arrToDos: [String: [String]] = ["Kitchen Chores": ["Wash Dishes", "Clean Cuntertops"], "Outdoor Chores": ["Mow the Lawn", "Water Plants", "Dispose Garbage"], "Office Chores": ["New Project Demo", "Client Meeting", "Prepare for Standup"]]
     
     var sections: [String] {
         return Array(arrToDos.keys)
