@@ -35,15 +35,15 @@ class FriendsTBLCell: UITableViewCell {
         self.lblPhone.text = value.phone
         
         
-        self.imgOne.layer.cornerRadius = self.imgOne.frame.width / 2
+        self.imgOne.layer.cornerRadius = 10
         self.imgOne.layer.borderWidth = 2
         self.imgOne.layer.borderColor = #colorLiteral(red: 0.9348526597, green: 0.9697601199, blue: 0.9562346339, alpha: 1).cgColor
         
-        self.imgTwo.layer.cornerRadius = self.imgOne.frame.width / 2
+        self.imgTwo.layer.cornerRadius = 10
         self.imgTwo.layer.borderWidth = 2
         self.imgTwo.layer.borderColor = #colorLiteral(red: 0.9348526597, green: 0.9697601199, blue: 0.9562346339, alpha: 1).cgColor
         
-        self.imgThree.layer.cornerRadius = self.imgOne.frame.width / 2
+        self.imgThree.layer.cornerRadius = 10
         self.imgThree.layer.borderWidth = 2
         self.imgThree.layer.borderColor = #colorLiteral(red: 0.9348526597, green: 0.9697601199, blue: 0.9562346339, alpha: 1).cgColor
         

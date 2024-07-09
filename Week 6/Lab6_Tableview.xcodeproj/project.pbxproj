@@ -132,10 +132,10 @@
 		5DC757C42C3B3007002FA70C /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				5DC757CB2C3B3336002FA70C /* FriendsVC.swift */,
 				5DC757C52C3B3018002FA70C /* FriendsTBLCell.swift */,
 				5DC757C62C3B3018002FA70C /* FriendsTBLCell.xib */,
 				5DC757C92C3B317F002FA70C /* FriendModel.swift */,
-				5DC757CB2C3B3336002FA70C /* FriendsVC.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";

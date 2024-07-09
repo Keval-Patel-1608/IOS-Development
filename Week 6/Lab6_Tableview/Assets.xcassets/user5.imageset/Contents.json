@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "user5@1x.png",
+      "filename" : "basketball.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "user5@2x.png",
+      "filename" : "basketball@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "user5@3x.png",
+      "filename" : "basketball@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

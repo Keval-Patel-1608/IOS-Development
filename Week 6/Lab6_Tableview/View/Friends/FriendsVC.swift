@@ -28,21 +28,21 @@ class FriendsVC: UIViewController {
     }
     
     private func configureStaticDataSource() {
-        self.arrFriends.append(Friend(name: "Amanda", email: "Amanda@gmail.com", phone: "2229876789", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user2") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Jordan", email: "jordan@gmail.com", phone: "4529874592", images: [UIImage(named: "user2") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user1") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "Kevin", email: "kevin@gmail.com", phone: "2229876526", images: [UIImage(named: "user4") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Jim", email: "jim@gmail.com", phone: "2435872635", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "John", email: "john@gmail.com", phone: "2229871234", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Kate", email: "kate@gmail.com", phone: "7229872094", images: [UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "Lila", email: "lia@gmail.com", phone: "2229879876", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Lily", email: "lily@gmail.com", phone: "2234276789", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user2") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "David", email: "david@gmail.com", phone: "2229874592", images: [UIImage(named: "user3") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Kevin", email: "kevin@gmail.com", phone: "722982526", images: [UIImage(named: "user4") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "Michel", email: "michel@gmail.com", phone: "2229874592", images: [UIImage(named: "user2") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user1") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "John", email: "john@gmail.com", phone: "2359871234", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "Kate", email: "kate@gmail.com", phone: "2229872635", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Nancy", email: "nancy@gmail.com", phone: "6449879876", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
         
-        self.arrFriends.append(Friend(name: "Peter", email: "Peter@gmail.com", phone: "2229872094", images: [UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
+        self.arrFriends.append(Friend(name: "Becca", email: "Becca@gmail.com", phone: "2229874592", images: [UIImage(named: "user3") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
         
     }
     
