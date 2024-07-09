@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XPX-ri-yeT">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="kSm-7n-09h" customClass="ToDoVC" customModule="Lab6_Tableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="spG-iT-ixq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbY-p9-4Ih">
-                                <rect key="frame" x="10" y="110" width="373" height="156"/>
+                                <rect key="frame" x="10" y="110" width="300" height="156"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-ew-MWw">
-                                        <rect key="frame" x="20" y="10" width="333" height="86"/>
+                                        <rect key="frame" x="20" y="10" width="260" height="86"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLJ-Vb-ASE">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="38"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="38"/>
                                                 <color key="backgroundColor" red="0.93581091766939184" green="0.88366658758583971" blue="0.9697602391242981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -40,17 +40,17 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter To Do Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFq-qS-Jy7">
-                                                <rect key="frame" x="0.0" y="48" width="333" height="38"/>
+                                                <rect key="frame" x="0.0" y="48" width="260" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zfq-EE-ge2">
-                                        <rect key="frame" x="20" y="106" width="333" height="40"/>
+                                        <rect key="frame" x="20" y="106" width="260" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-Oj-shn">
-                                                <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="6Ks-sw-IZ6"/>
@@ -71,7 +71,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL8-h8-dAq">
-                                                <rect key="frame" x="176.66666666666663" y="0.0" width="156.33333333333337" height="40"/>
+                                                <rect key="frame" x="140" y="0.0" width="120" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -113,17 +113,17 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-Ks-LB9">
-                                <rect key="frame" x="16" y="276" width="361" height="493"/>
+                                <rect key="frame" x="16" y="276" width="288" height="243"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-Do-mhq">
-                                <rect key="frame" x="0.0" y="852" width="393" height="0.0"/>
+                                <rect key="frame" x="0.0" y="568" width="320" height="0.0"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdC-UE-t1I">
-                                        <rect key="frame" x="0.0" y="-336" width="393" height="336"/>
+                                        <rect key="frame" x="0.0" y="-336" width="320" height="336"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HD-VM-LbO">
-                                                <rect key="frame" x="283" y="0.0" width="100" height="40"/>
+                                                <rect key="frame" x="210" y="0.0" width="100" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="bF8-lm-98h"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="zcz-V5-YSg"/>
@@ -136,7 +136,7 @@
                                                 </connections>
                                             </button>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rl5-bh-Cdg">
-                                                <rect key="frame" x="0.0" y="40" width="393" height="216"/>
+                                                <rect key="frame" x="0.0" y="40" width="320" height="216"/>
                                             </pickerView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,11 +196,11 @@
             <objects>
                 <viewController id="3fK-Ib-N6D" customClass="FriendsVC" customModule="Lab6_Tableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EWq-uC-J2B">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y1Z-Yu-T76">
-                                <rect key="frame" x="0.0" y="161.33333333333331" width="393" height="607.66666666666674"/>
+                                <rect key="frame" x="0.0" y="102" width="320" height="417"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -227,11 +227,11 @@
             <objects>
                 <viewController id="XS9-d1-vtQ" customClass="CarVC" customModule="Lab6_Tableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rgc-4U-n3J">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3fR-7d-Mjf">
-                                <rect key="frame" x="0.0" y="161.33333333333331" width="393" height="607.66666666666674"/>
+                                <rect key="frame" x="0.0" y="102" width="320" height="417"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -280,7 +280,7 @@
                     <tabBarItem key="tabBarItem" title="Cars" image="car" catalog="system" id="yBe-4p-rDg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7WA-1T-r3p">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
@@ -308,7 +308,7 @@
                     <tabBarItem key="tabBarItem" title="Todo" image="doc.text.image" catalog="system" id="eFI-Kl-bzj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yWd-3O-VmG">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
@@ -334,7 +334,7 @@
                     <tabBarItem key="tabBarItem" title="Friends" image="person" catalog="system" id="vYY-Vb-jJe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="daa-bn-0fu">
-                        <rect key="frame" x="0.0" y="59" width="393" height="102.33333333333334"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>

@@ -9,50 +9,61 @@ import UIKit
 
 class ToDoVC: UIViewController {
 
+    // Outlets
     @IBOutlet weak var viewTop: UIView!
     @IBOutlet weak var btnSelectSection: UIButton!
     @IBOutlet weak var txtItem: UITextField!
-    
     @IBOutlet weak var addNewSection: UIButton!
-    
     @IBOutlet weak var tblToDo: UITableView!
     @IBOutlet weak var viewBgPicker: UIView!
     @IBOutlet weak var viewBgPickerHeight: NSLayoutConstraint!
     @IBOutlet weak var btnPickerDone: UIButton!
     @IBOutlet weak var sectionPicker: UIPickerView!
     
+    // Data
+    var arrToDos: [String: [String]] = [
+        "Kitchen Chores": ["Wash Dishes", "Clean Countertops"],
+        "Outdoor Chores": ["Mow the Lawn", "Water Plants", "Dispose Garbage"],
+        "Office Chores": ["New Project Demo", "Client Meeting", "Prepare for Standup"]
+    ]
     
-    var arrToDos: [String: [String]] = ["Kitchen Chores": ["Wash Dishes", "Clean Cuntertops"], "Outdoor Chores": ["Mow the Lawn", "Water Plants", "Dispose Garbage"], "Office Chores": ["New Project Demo", "Client Meeting", "Prepare for Standup"]]
-    
+    // Computed property to get section names
     var sections: [String] {
         return Array(arrToDos.keys)
     }
+    
     var selectedSection = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Set up initial configurations
         self.configureNavigation()
         self.configureOutlets()
         
+        // Set table view delegate and data source
         self.tblToDo.delegate = self
         self.tblToDo.dataSource = self
         self.tblToDo.register(UINib(nibName: ToDoTBLCell.identifier, bundle: nil), forCellReuseIdentifier: ToDoTBLCell.identifier)
         
+        // Set picker view delegate and data source
         self.sectionPicker.delegate = self
         self.sectionPicker.dataSource = self
     }
 
+    // Configure navigation bar
     private func configureNavigation() {
         self.title = "To Do"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addSection))
     }
+    
+    // Configure initial appearance of UI elements
     private func configureOutlets() {
         self.viewTop.addDropShadow(shadowColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1).cgColor)
         self.viewBgPickerHeight.constant = 0
         self.viewBgPicker.isHidden = true
-        
     }
     
+    // Action to add a new section
     @objc func addSection() {
         let alert = UIAlertController(title: "New Section", message: "", preferredStyle: .alert)
         alert.addTextField { textField in
@@ -66,6 +77,7 @@ class ToDoVC: UIViewController {
                 self.sectionPicker.reloadAllComponents()
             }
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
         alert.addAction(cancelAction)
@@ -73,8 +85,10 @@ class ToDoVC: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    // Action when buttons are clicked (Add Task and Cancel)
     @IBAction func btnActionClicked(_ sender: UIButton) {
         if sender.tag == 1 {
+            // Add Task button clicked
             if btnSelectSection.titleLabel?.text != "Select Section" {
                 if self.txtItem.text != "" {
                     self.arrToDos[self.selectedSection]?.append(self.txtItem.text ?? "")
@@ -88,13 +102,18 @@ class ToDoVC: UIViewController {
                 self.showSimpleAlert(title: "Please select section")
             }
         } else {
+            // Cancel button clicked
             self.btnSelectSection.setTitle("Select Section", for: .normal)
             self.txtItem.text = ""
         }
     }
 }
 
+//MARK: - Extension for additional functionalities
+
 extension ToDoVC {
+    
+    // Handle when Select Section button is clicked
     @IBAction func btnSelectSectionClicked(_ sender: UIButton) {
         self.viewBgPicker.isHidden = false
         UIView.animate(withDuration: 0.5) {
@@ -105,6 +124,7 @@ extension ToDoVC {
         }
     }
     
+    // Handle when Done button in picker view is clicked
     @IBAction func btnPickerDoneClicked(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5) {
             self.viewBgPickerHeight.constant = 0
@@ -112,10 +132,11 @@ extension ToDoVC {
         } completion: { _ in
             self.viewBgPicker.isHidden = true
         }
-
     }
 }
-//MARK: - UITableview Delegate and DataSource
+
+//MARK: - Extension for UITableViewDelegate and UITableViewDataSource
+
 extension ToDoVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -151,7 +172,8 @@ extension ToDoVC: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-//MARK: - UIPickerView DataSource and Delegate
+//MARK: - Extension for UIPickerViewDelegate and UIPickerViewDataSource
+
 extension ToDoVC: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

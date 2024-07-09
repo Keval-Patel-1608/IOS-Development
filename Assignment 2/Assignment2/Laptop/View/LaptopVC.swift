@@ -66,7 +66,7 @@ class LaptopVC: UIViewController {
                 }
             } else {
                 self.showSimpleAlert(title: "Please enter all the details!", actionTitle: "Close", alertStyle: .actionSheet) {
-                    self.showAlert()
+                    self.showAlert()	
                 }
             }
         }
