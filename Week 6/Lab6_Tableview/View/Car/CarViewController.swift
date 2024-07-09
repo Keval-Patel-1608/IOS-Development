@@ -34,6 +34,8 @@ class CarVC: UIViewController {
         arrCars.append(Car(image: UIImage(named: "car"), make: "BMW", model: "Q6"))
         arrCars.append(Car(image: UIImage(named: "car"), make: "Ford", model: "Mustang"))
         arrCars.append(Car(image: UIImage(named: "car"), make: "Mazda", model: "X60"))
+        arrCars.append(Car(image: UIImage(named: "car"), make: "Ferrari", model: "RV"))
+        arrCars.append(Car(image: UIImage(named: "car"), make: "Tesla", model: "D9"))
     }
     
     private func configureTableview() {

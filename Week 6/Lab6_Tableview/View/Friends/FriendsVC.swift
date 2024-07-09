@@ -1,17 +1,11 @@
-//
-//  FriendsVC.swift
-//  Lab6_Tableview
-//
-//  Created by user244 on 2024-07-06.
-//
-
 import UIKit
 
 class FriendsVC: UIViewController {
 
     @IBOutlet weak var tblFriends: UITableView!
     var arrFriends = [Friend]()
-    
+    var editSwitch = UISwitch()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,37 +13,32 @@ class FriendsVC: UIViewController {
         self.configureStaticDataSource()
         self.configureTableview()
     }
-    
+
     private func configureNavigation() {
-        self.title = "Friends List"
+        self.title = "Friends"
+        
+        editSwitch.addTarget(self, action: #selector(switchValueChanged), for: .valueChanged)
+        let switchBarButton = UIBarButtonItem(customView: editSwitch)
+        navigationItem.leftBarButtonItem = switchBarButton
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addFriends))
-                
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(toggleEditMode))
     }
-    
+
     private func configureStaticDataSource() {
-        self.arrFriends.append(Friend(name: "Jordan", email: "jordan@gmail.com", phone: "4529874592", images: [UIImage(named: "user2") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user1") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "Jim", email: "jim@gmail.com", phone: "2435872635", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "Kate", email: "kate@gmail.com", phone: "7229872094", images: [UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "Lily", email: "lily@gmail.com", phone: "2234276789", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user2") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "Kevin", email: "kevin@gmail.com", phone: "722982526", images: [UIImage(named: "user4") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "John", email: "john@gmail.com", phone: "2359871234", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "Nancy", email: "nancy@gmail.com", phone: "6449879876", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
-        
-        self.arrFriends.append(Friend(name: "Becca", email: "Becca@gmail.com", phone: "2229874592", images: [UIImage(named: "user3") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
-        
+        arrFriends.append(Friend(name: "Jordan", email: "jordan@gmail.com", phone: "4529874592", images: [UIImage(named: "user2") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user1") ?? UIImage()]))
+        arrFriends.append(Friend(name: "Jim", email: "jim@gmail.com", phone: "2435872635", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        arrFriends.append(Friend(name: "Kate", email: "kate@gmail.com", phone: "7229872094", images: [UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
+        arrFriends.append(Friend(name: "Lily", email: "lily@gmail.com", phone: "2234276789", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user2") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        arrFriends.append(Friend(name: "Kevin", email: "kevin@gmail.com", phone: "722982526", images: [UIImage(named: "user4") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user6") ?? UIImage()]))
+        arrFriends.append(Friend(name: "John", email: "john@gmail.com", phone: "2359871234", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        arrFriends.append(Friend(name: "Nancy", email: "nancy@gmail.com", phone: "6449879876", images: [UIImage(named: "user1") ?? UIImage(), UIImage(named: "user5") ?? UIImage(), UIImage(named: "user3") ?? UIImage()]))
+        arrFriends.append(Friend(name: "Becca", email: "Becca@gmail.com", phone: "2229874592", images: [UIImage(named: "user3") ?? UIImage(), UIImage(named: "user4") ?? UIImage(), UIImage(named: "user2") ?? UIImage()]))
     }
-    
+
     private func configureTableview() {
-        self.tblFriends.delegate = self
-        self.tblFriends.dataSource = self
-        self.tblFriends.register(UINib(nibName: FriendsTBLCell.identifier, bundle: nil), forCellReuseIdentifier: FriendsTBLCell.identifier)
+        tblFriends.delegate = self
+        tblFriends.dataSource = self
+        tblFriends.register(UINib(nibName: FriendsTBLCell.identifier, bundle: nil), forCellReuseIdentifier: FriendsTBLCell.identifier)
     }
 
     @objc func addFriends() {
@@ -98,52 +87,49 @@ class FriendsVC: UIViewController {
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
-    
-    @objc func toggleEditMode() {
-        self.tblFriends.isEditing = !self.tblFriends.isEditing
+
+    @objc func switchValueChanged() {
+        tblFriends.isEditing = editSwitch.isOn
     }
-    
+
     func isValidEmail(email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-    
+
     func isValidPhone(phone: String) -> Bool {
         let phoneRegEx = "[0-9]{0,10}"
-
         let phonePred = NSPredicate(format:"SELF MATCHES %@", phoneRegEx)
         return phonePred.evaluate(with: phone)
     }
 }
 
 extension FriendsVC: UITableViewDelegate, UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arrFriends.count
+        return arrFriends.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTBLCell.identifier, for: indexPath) as? FriendsTBLCell else { return UITableViewCell() }
-        cell.configureCell(value: self.arrFriends[indexPath.row])
+        cell.configureCell(value: arrFriends[indexPath.row])
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.arrFriends.remove(at: indexPath.row)
+            arrFriends.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
-    
+
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let movedCar = self.arrFriends.remove(at: sourceIndexPath.row)
-        self.arrFriends.insert(movedCar, at: destinationIndexPath.row)
+        let movedCar = arrFriends.remove(at: sourceIndexPath.row)
+        arrFriends.insert(movedCar, at: destinationIndexPath.row)
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 175
     }
-    
 }
