@@ -251,7 +251,7 @@
                         <outlet property="MaxSpeedDisplay" destination="euT-e7-gtb" id="uEn-kd-9Ay"/>
                         <outlet property="SpeedExceedIndicator" destination="0dq-g3-TKw" id="E0N-9y-fcg"/>
                         <outlet property="TripStatus" destination="w8e-vl-mHI" id="kPO-Ok-agB"/>
-                        <outlet property="distBeforeOverspeed" destination="fWE-g2-gXZ" id="wdv-D2-PT3"/>
+                        <outlet property="predictedDistBeforeOverspeed" destination="fWE-g2-gXZ" id="8Ox-8d-pCG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
