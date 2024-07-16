@@ -13,9 +13,6 @@
 		2DF25BB72C3FA5B600BE08AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF25BB52C3FA5B600BE08AC /* Main.storyboard */; };
 		2DF25BB92C3FA5B700BE08AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF25BB82C3FA5B700BE08AC /* Assets.xcassets */; };
 		2DF25BBC2C3FA5B700BE08AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF25BBA2C3FA5B700BE08AC /* LaunchScreen.storyboard */; };
-		2DF25BC72C3FA5B800BE08AC /* Lab6_GPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF25BC62C3FA5B800BE08AC /* Lab6_GPSTests.swift */; };
-		2DF25BD12C3FA5B800BE08AC /* Lab6_GPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF25BD02C3FA5B800BE08AC /* Lab6_GPSUITests.swift */; };
-		2DF25BD32C3FA5B800BE08AC /* Lab6_GPSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF25BD22C3FA5B800BE08AC /* Lab6_GPSUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		2DF25BBB2C3FA5B700BE08AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DF25BBD2C3FA5B700BE08AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DF25BC22C3FA5B800BE08AC /* Lab7_GPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab7_GPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DF25BC62C3FA5B800BE08AC /* Lab6_GPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab6_GPSTests.swift; sourceTree = "<group>"; };
 		2DF25BCC2C3FA5B800BE08AC /* Lab7_GPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab7_GPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DF25BD02C3FA5B800BE08AC /* Lab6_GPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab6_GPSUITests.swift; sourceTree = "<group>"; };
-		2DF25BD22C3FA5B800BE08AC /* Lab6_GPSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab6_GPSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				2DF25BAE2C3FA5B600BE08AC /* Lab6_GPS */,
-				2DF25BC52C3FA5B800BE08AC /* Lab6_GPSTests */,
-				2DF25BCF2C3FA5B800BE08AC /* Lab6_GPSUITests */,
 				2DF25BAD2C3FA5B600BE08AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				2DF25BBD2C3FA5B700BE08AC /* Info.plist */,
 			);
 			path = Lab6_GPS;
-			sourceTree = "<group>";
-		};
-		2DF25BC52C3FA5B800BE08AC /* Lab6_GPSTests */ = {
-			isa = PBXGroup;
-			children = (
-				2DF25BC62C3FA5B800BE08AC /* Lab6_GPSTests.swift */,
-			);
-			path = Lab6_GPSTests;
-			sourceTree = "<group>";
-		};
-		2DF25BCF2C3FA5B800BE08AC /* Lab6_GPSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2DF25BD02C3FA5B800BE08AC /* Lab6_GPSUITests.swift */,
-				2DF25BD22C3FA5B800BE08AC /* Lab6_GPSUITestsLaunchTests.swift */,
-			);
-			path = Lab6_GPSUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF25BC72C3FA5B800BE08AC /* Lab6_GPSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF25BD32C3FA5B800BE08AC /* Lab6_GPSUITestsLaunchTests.swift in Sources */,
-				2DF25BD12C3FA5B800BE08AC /* Lab6_GPSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
