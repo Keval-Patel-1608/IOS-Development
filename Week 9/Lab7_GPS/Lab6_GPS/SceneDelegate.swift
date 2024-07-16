@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Lab6_GPS
 //
-//  Created by user228293 on 7/11/24.
+//  Created by user244717 on 7/11/24.
 //
 
 import UIKit

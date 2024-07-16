@@ -2,7 +2,7 @@
 //  Lab6_GPSUITests.swift
 //  Lab6_GPSUITests
 //
-//  Created by user228293 on 7/11/24.
+//  Created by user244717 on 7/11/24.
 //
 
 import XCTest
