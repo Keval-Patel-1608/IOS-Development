@@ -111,7 +111,7 @@ struct Rain:Codable {
 // MARK: - Sys
 struct Sys:Codable {
     let country: String
-    let sunrise, sunset: Int
+    let sunrise, sunset: Int?
 }
 
 // MARK: - WeatherElement
@@ -124,5 +124,5 @@ struct WeatherElement:Codable {
 struct Wind:Codable {
     let speed: Double
     let deg: Int
-    let gust: Double
+    let gust: Double?
 }
