@@ -1,8 +1,3 @@
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let weather = try? JSONDecoder().decode(Weather.self, from: jsonData)
-
 import Foundation
 
 // MARK: - Weather
@@ -65,4 +60,34 @@ struct Wind: Codable {
     let speed: Double
     let deg: Int
     let gust: Double
+}
+
+//API Session
+    let urlString = "https://api.openweathermap.org/data/2.5/weather?q=Waterloo,CA&appid=0396aac6351c1459c974171411e1a72e"
+
+    let urlSession = URLSession(configuration: .default)
+    let url = URL(string: urlString)
+
+if let url = url {
+    let dataTask = urlSession.dataTask(with: url) { (data, response, error) in
+        
+        if let data = data {
+            print(data)
+            let jsonDecoder = JSONDecoder()
+            do {
+                let readableData = try jsonDecoder.decode(Weather.self, from: data)
+                print (readableData)
+                print (readableData)
+                print (readableData)
+                print (readableData)
+                print (readableData)
+                print (readableData)
+            }
+            catch {
+                print ("Can't Decode Data")
+            }
+        }
+    }
+    dataTask.resume()
+    dataTask.response
 }

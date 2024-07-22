@@ -42,7 +42,6 @@
 		CC3F06072C45D8CC008C38E3 = {
 			isa = PBXGroup;
 			children = (
-				CC3F06272C45D8EC008C38E3 /* Weather.swift */,
 				CC3F06122C45D8CC008C38E3 /* Week10 */,
 				CC3F06112C45D8CC008C38E3 /* Products */,
 			);
@@ -59,6 +58,7 @@
 		CC3F06122C45D8CC008C38E3 /* Week10 */ = {
 			isa = PBXGroup;
 			children = (
+				CC3F06272C45D8EC008C38E3 /* Weather.swift */,
 				CC3F06132C45D8CC008C38E3 /* AppDelegate.swift */,
 				CC3F06152C45D8CC008C38E3 /* SceneDelegate.swift */,
 				CC3F06172C45D8CC008C38E3 /* ViewController.swift */,

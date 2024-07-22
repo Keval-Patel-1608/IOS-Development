@@ -11,6 +11,7 @@ import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    // Outlets for UI elements
     @IBOutlet weak var tripStatus: UIView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var speedExceedIndicator: UIView!
@@ -21,38 +22,46 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var currentSpeedDisplay: UILabel!
     @IBOutlet weak var predictedDistBeforeOverspeed: UILabel!
 
-    let locationDetector = CLLocationManager()
-    var maxSpd: CLLocationSpeed = 0
-    var totalSpd: CLLocationSpeed = 0
-    var spdCount: Int = 0
-    var totalDist: CLLocationDistance = 0
-    var lastLoc: CLLocation?
+    // Core Location manager
+    let locationManager = CLLocationManager()
+    
+    // Variables to keep track of speed and distance
+    var maxSpeed: CLLocationSpeed = 0
+    var totalSpeed: CLLocationSpeed = 0
+    var speedCount: Int = 0
+    var totalDistance: CLLocationDistance = 0
+    var lastLocation: CLLocation?
     var maxAcceleration: Double = 0
-
-    @IBAction func StartTripButton(_ sender: Any) {
-        locationDetector.startUpdatingLocation()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Setting up the location manager
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        mapView.showsUserLocation = true
+    }
+    
+    // Action to start trip
+    @IBAction func startTripButtonTapped(_ sender: Any) {
+        locationManager.startUpdatingLocation()
         tripStatus.backgroundColor = .green
         resetTripData()
     }
 
-    @IBAction func StopTripButton(_ sender: Any) {
-        locationDetector.stopUpdatingLocation()
+    // Action to stop trip
+    @IBAction func stopTripButtonTapped(_ sender: Any) {
+        locationManager.stopUpdatingLocation()
         tripStatus.backgroundColor = .gray
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        locationDetector.delegate = self
-        locationDetector.requestWhenInUseAuthorization()
-        mapView.showsUserLocation = true
-    }
-
+    // Function to reset trip data
     func resetTripData() {
-        maxSpd = 0
-        totalSpd = 0
-        spdCount = 0
-        totalDist = 0
-        lastLoc = nil
+        maxSpeed = 0
+        totalSpeed = 0
+        speedCount = 0
+        totalDistance = 0
+        lastLocation = nil
         maxAcceleration = 0
 
         currentSpeedDisplay.text = "0 km/h"
@@ -64,37 +73,47 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         speedExceedIndicator.backgroundColor = .clear
     }
 
+    // CLLocationManagerDelegate method to update locations
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
 
+        // Update current speed
         let speed = max(location.speed, 0) // Ensure speed is non-negative
         currentSpeedDisplay.text = String(format: "%.2f km/h", speed * 3.6) // Convert m/s to km/h
 
-        if speed > maxSpd {
-            maxSpd = speed
-            maxSpeedDisplay.text = String(format: "%.2f km/h", maxSpd * 3.6)
+        // Update maximum speed
+        if speed > maxSpeed {
+            maxSpeed = speed
+            maxSpeedDisplay.text = String(format: "%.2f km/h", maxSpeed * 3.6)
         }
 
-        totalSpd += speed
-        spdCount += 1
-        let averageSpeed = totalSpd / Double(spdCount)
+        // Update average speed
+        totalSpeed += speed
+        speedCount += 1
+        let averageSpeed = totalSpeed / Double(speedCount)
         avgSpeedDisplay.text = String(format: "%.2f km/h", averageSpeed * 3.6)
 
-        if let lastLocation = lastLoc {
+        // Update distance and acceleration
+        if let lastLocation = lastLocation {
             let distance = location.distance(from: lastLocation)
-            totalDist += distance
-            distCoveredDisplay.text = String(format: "%.2f km", totalDist / 1000) // Convert m to km
+            totalDistance += distance
+            distCoveredDisplay.text = String(format: "%.2f km", totalDistance / 1000) // Convert m to km
 
+            // Calculate acceleration
+            // acceleration = |v - v0| / Δt
             let acceleration = abs(speed - lastLocation.speed) / location.timestamp.timeIntervalSince(lastLocation.timestamp)
             if acceleration > maxAcceleration {
                 maxAcceleration = acceleration
                 maxAccelerateDisplay.text = String(format: "%.2f m/s^2", maxAcceleration)
             }
 
-            // Predict the distance before exceeding speed limit
+            // Predict the distance before overspeeding
+            // distance = v0 * t + 0.5 * a * t^2
             if speed * 3.6 < 115 && acceleration > 0 {
                 let targetSpeed = 115.0 / 3.6 // Convert 115 km/h to m/s
+                // time to reach target speed = (v_f - v0) / a
                 let timeToReachTargetSpeed = (targetSpeed - speed) / acceleration
+                // predicted distance = v0 * t + 0.5 * a * t^2
                 let predictedDistance = speed * timeToReachTargetSpeed + 0.5 * acceleration * pow(timeToReachTargetSpeed, 2)
                 predictedDistBeforeOverspeed.text = String(format: "%.2f km", predictedDistance / 1000) // Convert m to km
             } else {
@@ -103,14 +122,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         } else if speed * 3.6 < 115 {
             // Predict distance at the start of the trip
             let targetSpeed = 115.0 / 3.6 // Convert 115 km/h to m/s
+            // time to reach target speed = v_f / a
             let timeToReachTargetSpeed = targetSpeed / maxAcceleration
+            // predicted distance = 0.5 * a * t^2
             let predictedDistance = 0.5 * maxAcceleration * pow(timeToReachTargetSpeed, 2)
             predictedDistBeforeOverspeed.text = String(format: "%.2f km", predictedDistance / 1000) // Convert m to km
         }
 
-        lastLoc = location
+        lastLocation = location
 
-        // Change the speed indicator color if speed exceeds 115 km/h
+        // Update the speed exceed indicator
         if speed * 3.6 > 115 {
             speedExceedIndicator.backgroundColor = .red
             predictedDistBeforeOverspeed.text = "0 km"
@@ -118,6 +139,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             speedExceedIndicator.backgroundColor = .clear
         }
 
+        // Update the map view region
         let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         mapView.setRegion(region, animated: true)
     }
