@@ -40,6 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         guard let url = URL(string: urlString) else { return }
 
         let urlSession = URLSession(configuration: .default)
+        
         let dataTask = urlSession.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 print("Error fetching weather data: \(error)")
@@ -52,28 +53,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 let jsonDecoder = JSONDecoder()
                 let weather = try jsonDecoder.decode(Weather.self, from: data)
                 DispatchQueue.main.async {
-                    self.updateUI(with: weather)
+                    
+                    // Displaying Weather Data
+                    self.locationDisplay.text = weather.name
+                    self.weatherDisplay.text = weather.weather.first?.description
+                    self.temperatureDisplay.text = "\(Int(weather.main.temp))°C"
+                    self.humidityDisplay.text = "\(weather.main.humidity)%"
+                    
+                    let windSpeedKmH = Int(weather.wind.speed * 3.6)
+                    self.windDisplay.text = "\(windSpeedKmH) km/h"
+                    
+                    if let icon = weather.weather.first?.icon {
+                        self.fetchWeatherIcon(for: icon)
+                    }
                 }
             } catch {
                 print("Failed to decode weather data: \(error)")
             }
         }
         dataTask.resume()
-    }
-
-    // MARK: - UI Update
-    func updateUI(with weather: Weather) {
-        locationDisplay.text = weather.name
-        weatherDisplay.text = weather.weather.first?.description
-        temperatureDisplay.text = "\(Int(weather.main.temp))°C"
-        humidityDisplay.text = "\(weather.main.humidity)%"
-        
-        let windSpeedKmH = Int(weather.wind.speed * 3.6)
-        windDisplay.text = "\(windSpeedKmH) km/h"
-        
-        if let icon = weather.weather.first?.icon {
-            fetchWeatherIcon(for: icon)
-        }
     }
 
     func fetchWeatherIcon(for icon: String) {
